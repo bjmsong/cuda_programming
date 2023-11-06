@@ -2,7 +2,7 @@
 // By: Nick from CoffeeBeforeArch
 
 #include <algorithm>
-#include <cassert>
+#include <cassert>  // 提供了断言功能
 #include <iostream>
 #include <vector>
 
@@ -32,7 +32,7 @@ int main() {
 
   // Vectors for holding the host-side (CPU-side) data
   std::vector<int> a;
-  a.reserve(N);
+  a.reserve(N);   // 预留 vector 的存储空间，而不改变 vector 的大小或元素数量
   std::vector<int> b;
   b.reserve(N);
   std::vector<int> c;
